@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="auth.css" />
+    <link rel="stylesheet" href="register.css" />
   </head>
 
   <body>
@@ -73,13 +73,13 @@
                 
                 <div class="form-group">
                   <label for="signin-email">Email</label>
-                  <input type="email" id="signin-email" placeholder="Enter your email" required>
+                  <input type="email" id="signin-email" name="email" placeholder="Enter your email" required>
                 </div>
                 
                 <div class="form-group">
                   <label for="signin-password">Password</label>
                   <div class="password-input">
-                    <input type="password" id="signin-password" placeholder="Enter your password" required>
+                    <input type="password" id="signin-password" name="password" placeholder="Enter your password" required>
                     <button type="button" class="password-toggle">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
@@ -276,6 +276,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="auth.js"></script>
+    <script src="register.js"></script>
   </body>
 </html>

@@ -90,9 +90,19 @@ document.addEventListener('DOMContentLoaded', function() {
   if (signinForm) {
     signinForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      const form = document.getElementById('signin-form');
+    //   const formData = new FormData(form);
+
+      const formData = new FormData(signinForm);
+
+    const email = formData.get('email');
+    const password = formData.get('password');
+
+    console.log('Email:', email);
+    console.log('Password:', password);
       
       // Here you would normally send the data to your backend
-      alert('Sign in successful! (Demo only)');
+    //   alert('Sign in successful! (Demo only)');
     });
   }
   
